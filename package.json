@@ -1,0 +1,12 @@
+{
+  "name": "glassnotes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js",
+    "preview": "node server.js --dist"
+  }
+}
