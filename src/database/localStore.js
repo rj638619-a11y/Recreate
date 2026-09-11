@@ -1,0 +1,2 @@
+/** IndexedDB cache keeps notes available before cloud sync resumes. */
+const DB='glassnotes-offline';export const localStore={async saveNote(note){return new Promise((resolve,reject)=>{const req=indexedDB.open(DB,1);req.onupgradeneeded=()=>req.result.createObjectStore('notes',{keyPath:'id',autoIncrement:true});req.onsuccess=()=>{const tx=req.result.transaction('notes','readwrite');tx.objectStore('notes').put(note);tx.oncomplete=resolve;tx.onerror=reject;};req.onerror=reject;});}};
