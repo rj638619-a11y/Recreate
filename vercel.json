@@ -2,6 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "node --version",
+  "buildCommand": "node build.js",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true
