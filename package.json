@@ -1,0 +1,13 @@
+{
+  "name": "glassnotes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js",
+    "preview": "node server.js --dist"
+  }
+}
+{"name":"glassnotes","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite","build":"vite","preview":"vite preview"},"dependencies":{"@firebase/app":"^0.10.14","firebase":"^10.14.1","pdfjs-dist":"^4.10.38"},"devDependencies":{"vite":"^5.4.10"}}
