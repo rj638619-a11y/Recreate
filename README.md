@@ -1,11 +1,11 @@
-<div align="center">
+# GlassNotes
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A responsive personal learning workspace for PDF reading, rich notes, folders, Drive backup, and offline access.
 
-  <h1>Built with AI Studio</h2>
+## Getting started
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+1. Copy `.env.example` to `.env` and configure a Firebase web app.
+2. Run `npm install` and `npm run dev`.
+3. Deploy `firestore.rules` and `storage.rules` with the Firebase CLI.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+The application shell has PWA caching, IndexedDB note persistence, responsive dashboard views, and security rule templates.

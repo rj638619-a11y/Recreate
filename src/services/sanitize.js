@@ -1,0 +1,2 @@
+const allowed=new Set(['P','BR','H1','H2','H3','STRONG','EM','U','UL','OL','LI','A','IMG','TABLE','THEAD','TBODY','TR','TD','TH']);
+export function sanitizeHtml(html){const doc=new DOMParser().parseFromString(html,'text/html');doc.body.querySelectorAll('*').forEach(node=>{if(!allowed.has(node.tagName)){node.replaceWith(...node.childNodes);return;}[...node.attributes].forEach(a=>{if(!['href','src','alt'].includes(a.name)||/^javascript:/i.test(a.value))node.removeAttribute(a.name);});});return doc.body.innerHTML;}
